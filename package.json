@@ -68,6 +68,7 @@
     "@dcloudio/uni-quickapp-webview": "^2.0.1-alpha-36920221118002",
     "@dcloudio/uni-stacktracey": "^2.0.1-alpha-36920221118002",
     "@dcloudio/uni-stat": "^2.0.1-alpha-36920221118002",
+    "@qiun/ucharts": "^2.4.4-20221102",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
