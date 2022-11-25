@@ -29,9 +29,9 @@
   </view>
 </template>
 
-<script lang="ts">
+<script>
 import uCharts from '@qiun/ucharts';
-let uChartsInstance: any = {};
+let uChartsInstance = {};
 export default {
   props: {
     score: {
@@ -68,7 +68,7 @@ export default {
       this.drawCharts('myid', res);
     },
 
-    drawCharts(id: string, data: any) {
+    drawCharts(id, data) {
       const ctx = uni.createCanvasContext(id, this);
       uChartsInstance[id] = new uCharts({
         type: "arcbar",
@@ -105,7 +105,7 @@ export default {
         }
       });
     },
-    tap(e: any) {
+    tap(e) {
       uChartsInstance[e.target.id].touchLegend(e);
       uChartsInstance[e.target.id].showToolTip(e);
     }

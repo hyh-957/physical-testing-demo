@@ -1,0 +1,109 @@
+{
+  "key": [
+    {
+      "id": 0,
+      "educationaLevel": "大学",
+      "grade": "大一",
+      "gener": "男",
+      "index": [
+        "vitalCapacity",
+        "height",
+        "weight",
+        "jump",
+        "sitAndReach",
+        "the50MeterRun",
+        "the1000MeterRun",
+        "pullUp"
+      ],
+      "standard": [
+        {
+          "key": "vitalCapacity",
+          "name": "肺活量(毫升)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 5040
+            },
+            {
+              "score": 95,
+              "edge": 4920
+            },
+            {
+              "score": 90,
+              "edge": 4800
+            },
+            {
+              "score": 85,
+              "edge": 4550
+            },
+            {
+              "score": 80,
+              "edge": 4300
+            },
+            {
+              "score": 78,
+              "edge": 4180
+            },
+            {
+              "score": 76,
+              "edge": 4060
+            },
+            {
+              "score": 74,
+              "edge": 3940
+            },
+            {
+              "score": 72,
+              "edge": 3820
+            },
+            {
+              "score": 70,
+              "edge": 3700
+            },
+            {
+              "score": 68,
+              "edge": 3580
+            },
+            {
+              "score": 66,
+              "edge": 3460
+            },
+            {
+              "score": 64,
+              "edge": 3340
+            },
+            {
+              "score": 62,
+              "edge": 3220
+            },
+            {
+              "score": 60,
+              "edge": 3100
+            },
+            {
+              "score": 50,
+              "edge": 2940
+            },
+            {
+              "score": 40,
+              "edge": 2780
+            },
+            {
+              "score": 30,
+              "edge": 2620
+            },
+            {
+              "score": 20,
+              "edge": 2460
+            },
+            {
+              "score": 10,
+              "edge": 2300
+            }
+          ]
+        }
+       
+      ]
+    }
+  ]
+}

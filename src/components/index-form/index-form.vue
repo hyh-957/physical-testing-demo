@@ -79,9 +79,10 @@
 
 </template>
 
-<script lang="ts">
+<script>
 
 export default {
+  props: ['keyS'],
   emits: ['outputCount'],
   data() {
     return {
@@ -96,25 +97,60 @@ export default {
       the50MeterRun: null,
       the1000MeterRun: null,
       pullUp: null,
+      sumOfVitalCapacity: 0
+    }
+  },
+  mounted() {
+    
+  },
+  onLoad(){
+   
+  },
+  watch: {
+    vitalCapacity(n, o) {
+      console.log(this.keyS)
+      // console.log(n, o);
+      const i = this.keyS.index.indexOf('vitalCapacity');
+      const s = this.keyS.standard[i];
+      const sarray = s.standardDetal;
+      // console.log(i,s,sarray);
+      
+      let tempS = 0;
+      let tempE;
+      sarray.some(element => {
+        if(n >= element.edge){
+          tempE =element.edge;
+          tempS =element.score;
+          return true;
+        }
+      });
+      // console.log(tempS, tempE)
+      if(tempS > 0){
+        this.sumOfVitalCapacity = tempS*15/100;
+        this.$emit('outputCount', this.sumOfVitalCapacity)
+      }
+      
     }
   },
   methods: {
-    bindPickerChange(e: any) {
+    bindPickerChange(e) {
       this.index = e.detail.value;
     },
 
-    radioChange(e: any) {
+    radioChange(e) {
       this.current = e.detail.value;
     },
 
-    reset(e: any) {
+    reset(e) {
       console.log()
     },
 
-    count(e: any) {
+    count(e) {
       // console.log(this.height + this.weight)
       this.$emit('outputCount', this.height)
-    }
+    },
+
+
   }
 }
 </script>

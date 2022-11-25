@@ -12,6 +12,7 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "baseUrl": ".",
+    "resolveJsonModule": true,
     "types": [
       "webpack-env",
       "@dcloudio/types",
