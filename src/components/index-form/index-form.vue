@@ -67,7 +67,7 @@
 
       <view class="form-control">
         <text>引体向上(次)</text>
-        <input type="number" v-model="pullUp" @blur="count" placeholder="请输入" />
+        <input type="number" v-model="pullUp" placeholder="请输入" />
       </view>
 
     </form>
@@ -89,48 +89,48 @@ export default {
       array: ['大一', '大二', '大三', '大四'],
       index: 0,
       current: "1",
-      height: 180,
+      height: null,//BMI=体重÷身高^2
       weight: null,
-      vitalCapacity: null,
-      jump: null,
-      sitAndReach: null,
-      the50MeterRun: null,
-      the1000MeterRun: null,
-      pullUp: null,
-      sumOfVitalCapacity: 0
+      vitalCapacity: null, //15
+      jump: null, //10
+      sitAndReach: null, //10
+      the50MeterRun: null, //20
+      the1000MeterRun: null, //20
+      pullUp: null, //10
+      sumA: [0, 0, 0, 0, 0, 0]
     }
   },
   mounted() {
-    
+
   },
-  onLoad(){
-   
+  onLoad() {
+
   },
   watch: {
+    height(n, o) {
+      this.sum('BMI', n, 15, 6, 'BMI');
+    },
+    weight(n, o) {
+      this.sum('BMI', n, 15, 6, 'BMI');
+    },
     vitalCapacity(n, o) {
-      console.log(this.keyS)
-      // console.log(n, o);
-      const i = this.keyS.index.indexOf('vitalCapacity');
-      const s = this.keyS.standard[i];
-      const sarray = s.standardDetal;
-      // console.log(i,s,sarray);
-      
-      let tempS = 0;
-      let tempE;
-      sarray.some(element => {
-        if(n >= element.edge){
-          tempE =element.edge;
-          tempS =element.score;
-          return true;
-        }
-      });
-      // console.log(tempS, tempE)
-      if(tempS > 0){
-        this.sumOfVitalCapacity = tempS*15/100;
-        this.$emit('outputCount', this.sumOfVitalCapacity)
-      }
-      
-    }
+      this.sum('vitalCapacity', n, 15, 0, 'high');
+    },
+    jump(n, o) {
+      this.sum('jump', n, 10, 1, 'high');
+    },
+    sitAndReach(n, o) {
+      this.sum('sitAndReach', n, 10, 2, 'high');
+    },
+    the50MeterRun(n, o) {
+      this.sum('the50MeterRun', n, 20, 3, 'low');
+    },
+    the1000MeterRun(n, o) {
+      this.sum('the1000MeterRun', n, 20, 4, 'low');
+    },
+    pullUp(n, o) {
+      this.sum('pullUp', n, 10, 5, 'high');
+    },
   },
   methods: {
     bindPickerChange(e) {
@@ -142,15 +142,65 @@ export default {
     },
 
     reset(e) {
-      console.log()
+      // console.log();
+      this.sumA = [0, 0, 0, 0, 0, 0];
+      this.count1();
+    },
+    count1() {
+      this.$emit('outputCount', this.sumA.reduce((a, b) => a + b))
     },
 
-    count(e) {
-      // console.log(this.height + this.weight)
-      this.$emit('outputCount', this.height)
+    sum(key, n, weight, index, type) {
+      // console.log(this.keyS.index)
+      const i = this.keyS.index.indexOf(key);
+      const s = this.keyS.standard[i];
+      const sarray = s.standardDetal;
+
+      let tempS = 0;
+      let tempE;
+      if (type === 'high') {
+        sarray.some(element => {
+          if (n >= element.edge) {
+            tempE = element.edge;
+            tempS = element.score;
+            return true;
+          }
+        });
+      } else if (type === "low") {
+        sarray.some(element => {
+          if (n <= element.edge) {
+            tempE = element.edge;
+            tempS = element.score;
+            return true;
+          }
+        });
+      } else {
+        const BMI = parseInt(this.countBMI()*10)/10 ; //保留一位小数
+        if (BMI > 0) {
+          sarray.forEach(element => {
+            element.range.forEach(element1 => {
+              const e1 = element1[0] ?? -Infinity;
+              const e2 = element1[1] ?? Infinity;
+              if (e1 <= BMI && BMI <= e2) {
+                tempS = element.score;
+              }
+            });
+          });
+        }
+      }
+      const temp = tempS * weight / 100;
+      this.sumA[index] = temp;
+      this.count1();
     },
 
+    countBMI() {
+      if (this.height && this.weight) {
+        return Number(this.weight) / ((Number(this.height) / 100) ** 2);
+      } else {
+        return 0;
+      }
 
+    }
   }
 }
 </script>
@@ -197,10 +247,10 @@ export default {
   text-align: center;
   display: flex;
   align-items: center;
-  padding:  8px;
+  padding: 8px;
 }
 
-.arrow{
+.arrow {
   border-left: 1px solid #6b87e3;
   margin: 0 8px 0 16px;
 }
@@ -226,7 +276,7 @@ export default {
   display: inline-block;
 }
 
-.radio-label{
+.radio-label {
   margin-right: 16px;
 }
 

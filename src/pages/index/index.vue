@@ -11,7 +11,7 @@ import * as d from '../../static/config.json'
 export default Vue.extend({
   data() {
     return {
-      score: 80,
+      score: 0,
       keyS: {}
     }
   },
@@ -29,7 +29,7 @@ export default Vue.extend({
   },
   methods: {
     count(e: number) {
-      console.log(e)
+      // console.log(e)
       this.score = Number(e);
 
     },

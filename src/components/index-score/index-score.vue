@@ -87,7 +87,7 @@ export default {
           offsetY: -16
         },
         subtitle: {
-          name: this.score,
+          name: this.score === 0 ? "0": this.score,
           fontSize: 18,
           color: "#FFF",
           offsetY: -8
