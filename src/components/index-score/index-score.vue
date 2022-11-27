@@ -121,6 +121,7 @@ export default {
   padding: 16px;
   position: fixed;
   z-index: 11;
+	box-sizing: border-box; /* 微信小程序没有应App.vue的公共样式 */
 }
 
 .top {

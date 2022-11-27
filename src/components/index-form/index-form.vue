@@ -211,6 +211,7 @@ export default {
   width: 100%;
   position: absolute;
   top: 200px;
+	box-sizing: border-box;/* 微信小程序没有应App.vue的公共样式 */
 }
 
 .form-control {
