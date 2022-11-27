@@ -1,80 +1,84 @@
 <template>
-  <view class="form-container">
-    <view class="form-control line-1">
-      <view class="grade-select">
-        <view class="label">年级: </view>
-        <picker class="picker" @change="bindPickerChange" :value="index" :range="array">
-          <view class="picker-inside">
-            <view class="picker-inside-value">{{ array[index] }}</view>
-            <view class="arrow"></view>
-          </view>
+  <!-- 使用scroll-view原因：微信小程序会有父元素position:fixed,子元素uchart图却跟随滚动的现象。参考：https://www.cnblogs.com/i-douya/p/9277183.html -->
+  <scroll-view scroll-y='true' style="height: calc(100vh - 244px); position: absolute;top: 200px;">
+    <view class="form-container">
+      <view class="form-control line-1">
+        <view class="grade-select">
+          <view class="label">年级: </view>
+          <picker class="picker" @change="bindPickerChange" :value="index" :range="array">
+            <view class="picker-inside">
+              <view class="picker-inside-value">{{ array[index] }}</view>
+              <view class="arrow"></view>
+            </view>
 
-        </picker>
+          </picker>
+        </view>
+        <view class="gender-radio">
+          <view class="label">性别: </view>
+          <radio-group class="radio-group" @change="radioChange">
+            <label class="radio-label">
+              <radio value="1" :checked="current === '1'" />男
+            </label>
+            <label class="radio-label">
+              <radio value="0" :checked="current === '0'" />女
+            </label>
+          </radio-group>
+        </view>
       </view>
-      <view class="gender-radio">
-        <view class="label">性别: </view>
-        <radio-group class="radio-group" @change="radioChange">
-          <label class="radio-label">
-            <radio value="1" :checked="current === '1'" />男
-          </label>
-          <label class="radio-label">
-            <radio value="0" :checked="current === '0'" />女
-          </label>
-        </radio-group>
-      </view>
+
+      <form @reset="reset">
+        <view class="form-control line-2">
+          <text class="column-header">应测项目</text>
+          <button class="reset-button" form-type="reset">重置</button>
+        </view>
+
+        <view class="form-control">
+          <text>身高(厘米)</text>
+          <input type="number" v-model="height" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>体重(千克)</text>
+          <input type="number" v-model="weight" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>肺活量(毫升)</text>
+          <input type="number" v-model="vitalCapacity" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>立定跳远(厘米)</text>
+          <input type="number" v-model="jump" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>座位体前屈(厘米)</text>
+          <input type="number" v-model="sitAndReach" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>50米跑(秒)</text>
+          <input type="number" v-model="the50MeterRun" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>1000米跑(秒)</text>
+          <input type="number" v-model="the1000MeterRun" placeholder="请输入" />
+        </view>
+
+        <view class="form-control">
+          <text>引体向上(次)</text>
+          <input type="number" v-model="pullUp" placeholder="请输入" />
+        </view>
+
+      </form>
+
+
+
     </view>
+  </scroll-view>
 
-    <form @reset="reset">
-      <view class="form-control line-2">
-        <text class="column-header">应测项目</text>
-        <button class="reset-button" form-type="reset">重置</button>
-      </view>
-
-      <view class="form-control">
-        <text>身高(厘米)</text>
-        <input type="number" v-model="height" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>体重(千克)</text>
-        <input type="number" v-model="weight" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>肺活量(毫升)</text>
-        <input type="number" v-model="vitalCapacity" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>立定跳远(厘米)</text>
-        <input type="number" v-model="jump" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>座位体前屈(厘米)</text>
-        <input type="number" v-model="sitAndReach" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>50米跑(秒)</text>
-        <input type="number" v-model="the50MeterRun" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>1000米跑(秒)</text>
-        <input type="number" v-model="the1000MeterRun" placeholder="请输入" />
-      </view>
-
-      <view class="form-control">
-        <text>引体向上(次)</text>
-        <input type="number" v-model="pullUp" placeholder="请输入" />
-      </view>
-
-    </form>
-
-
-
-  </view>
 
 
 </template>
@@ -175,7 +179,7 @@ export default {
           }
         });
       } else {
-        const BMI = parseInt(this.countBMI()*10)/10 ; //保留一位小数
+        const BMI = parseInt(this.countBMI() * 10) / 10; //保留一位小数
         if (BMI > 0) {
           sarray.forEach(element => {
             element.range.forEach(element1 => {
@@ -209,9 +213,9 @@ export default {
 .form-container {
   padding: 16px;
   width: 100%;
-  position: absolute;
-  top: 200px;
-	box-sizing: border-box;/* 微信小程序没有应App.vue的公共样式 */
+  /* position: absolute;
+  top: 200px; */
+  box-sizing: border-box;
 }
 
 .form-control {
