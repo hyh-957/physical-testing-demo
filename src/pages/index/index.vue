@@ -16,14 +16,18 @@ export default Vue.extend({
     }
   },
   onLoad() {
-
+	
     // console.log(d)
+		// app会报错，所以用fail
     uni.request({
       url: '../../static/config.json',
       success: (res) => {
         this.keyS = (res.data as AnyObject).key[0];
         console.log(this.keyS)
-      }
+      },
+			fail:(res)=> {
+				this.keyS = d.key[0];
+			}
     });
 
   },

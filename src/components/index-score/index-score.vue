@@ -120,7 +120,6 @@ export default {
   background: linear-gradient(#4b92ff, rgb(89 127 255));
   padding: 16px;
   position: fixed;
-  top: var(--top-window-height);
   z-index: 11;
 }
 
