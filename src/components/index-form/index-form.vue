@@ -62,14 +62,24 @@
           <input type="number" v-model="the50MeterRun" placeholder="请输入" />
         </view>
 
-        <view class="form-control">
+        <view class="form-control" v-if="current === '1'">
           <text>1000米跑(秒)</text>
           <input type="number" v-model="the1000MeterRun" placeholder="请输入" />
         </view>
 
-        <view class="form-control">
+        <view class="form-control" v-if="current === '0'">
+          <text>800米跑(秒)</text>
+          <input type="number" v-model="the800MeterRun" placeholder="请输入" />
+        </view>
+
+        <view class="form-control" v-if="current === '1'">
           <text>引体向上(次)</text>
           <input type="number" v-model="pullUp" placeholder="请输入" />
+        </view>
+
+        <view class="form-control" v-if="current === '0'">
+          <text>仰卧起坐(次)</text>
+          <input type="number" v-model="sitUp" placeholder="请输入" />
         </view>
 
       </form>
@@ -87,7 +97,7 @@
 
 export default {
   props: ['keyS'],
-  emits: ['outputCount'],
+  emits: ['outputCount', 'outputSelectValueChange'],
   data() {
     return {
       array: ['大一', '大二', '大三', '大四'],
@@ -100,7 +110,9 @@ export default {
       sitAndReach: null, //10
       the50MeterRun: null, //20
       the1000MeterRun: null, //20
-      pullUp: null, //10
+      the800MeterRun: null,
+      pullUp: null, //10,
+      sitUp: null,
       sumA: [0, 0, 0, 0, 0, 0]
     }
   },
@@ -132,17 +144,26 @@ export default {
     the1000MeterRun(n, o) {
       this.sum('the1000MeterRun', n, 20, 4, 'low');
     },
+    the800MeterRun(n, o) {
+      this.sum('the800MeterRun', n, 20, 4, 'low');
+    },
+
     pullUp(n, o) {
       this.sum('pullUp', n, 10, 5, 'high');
+    },
+    sitUp(n, o) {
+      this.sum('sitUp', n, 10, 5, 'high');
     },
   },
   methods: {
     bindPickerChange(e) {
       this.index = e.detail.value;
+      this.$emit('outputSelectValueChange', this.index, this.current);
     },
 
     radioChange(e) {
       this.current = e.detail.value;
+      this.$emit('outputSelectValueChange', this.index, this.current);
     },
 
     reset(e) {
@@ -155,7 +176,7 @@ export default {
     },
 
     sum(key, n, weight, index, type) {
-      // console.log(this.keyS.index)
+      console.log(this.keyS.index)
       const i = this.keyS.index.indexOf(key);
       const s = this.keyS.standard[i];
       const sarray = s.standardDetal;
