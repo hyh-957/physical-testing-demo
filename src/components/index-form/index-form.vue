@@ -285,7 +285,8 @@ export default {
   content: "";
   margin-left: 16px;
   display: inline-block;
-  background-image: url(@/static/大于号.svg);
+  /* 大于号 */
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjY5MjgwNDUyNzM0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE3NTciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iIzg1OWVlNCI+PHBhdGggZD0iTTc5OC4zOCA1MzguMDNsLTU3NS4xLTM0Ni4yIDAuMDQtNjguNzUgNTc1LjA0IDM0NS42IDAuMDIgNjkuMzV6IiBwLWlkPSIxNzU4Ij48L3BhdGg+PHBhdGggZD0iTTc5OC4zOCA1MzguMDNMMjIzLjMgODk0Ljk5di02OS41Mmw1NzUuMDYtMzU2Ljc5IDAuMDIgNjkuMzV6IiBwLWlkPSIxNzU5Ij48L3BhdGg+PC9zdmc+);
   background-size: cover;
   height: 8px;
   width: 8px;
