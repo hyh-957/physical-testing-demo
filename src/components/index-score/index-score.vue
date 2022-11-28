@@ -29,10 +29,11 @@
   </view>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from 'vue';
 import uCharts from '@qiun/ucharts';
-let uChartsInstance = {};
-export default {
+let uChartsInstance: any = {};
+export default Vue.extend({
   props: {
     score: {
       type: Number,
@@ -68,7 +69,7 @@ export default {
       this.drawCharts('myid', res);
     },
 
-    drawCharts(id, data) {
+    drawCharts(id: string, data: any) {
       const ctx = uni.createCanvasContext(id, this);
       uChartsInstance[id] = new uCharts({
         type: "arcbar",
@@ -87,7 +88,7 @@ export default {
           offsetY: -16
         },
         subtitle: {
-          name: this.score === 0 ? "0": this.score,
+          name: this.score === 0 ? "0" : this.score,
           fontSize: 18,
           color: "#FFF",
           offsetY: -8
@@ -105,12 +106,12 @@ export default {
         }
       });
     },
-    tap(e) {
+    tap(e: any) {
       uChartsInstance[e.target.id].touchLegend(e);
       uChartsInstance[e.target.id].showToolTip(e);
     }
   }
-}
+})
 </script>
 
 <style scoped>
@@ -121,7 +122,8 @@ export default {
   padding: 16px;
   position: fixed;
   z-index: 11;
-	box-sizing: border-box; /* 微信小程序没有应App.vue的公共样式 */
+  box-sizing: border-box;
+  /* 微信小程序没有应App.vue的公共样式 */
 }
 
 .top {

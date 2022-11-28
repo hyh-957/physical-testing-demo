@@ -3,7 +3,7 @@
     {
       "id": 0,
       "educationaLevel": "大学",
-      "grade": "大一",
+      "grade": ["大一","大二"],
       "gener": "男",
       "index": [
         "vitalCapacity",
@@ -530,6 +530,1696 @@
                 [
                   null,
                   17.8
+                ],
+                [
+                  24,
+                  27.9
+                ]
+              ]
+            },
+            {
+              "score": 60,
+              "range": [
+                [
+                  28,
+                  null
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "educationaLevel": "大学",
+      "grade": ["大三","大四"],
+      "gener": "男",
+      "index": [
+        "vitalCapacity",
+        "jump",
+        "sitAndReach",
+        "the50MeterRun",
+        "the1000MeterRun",
+        "pullUp",
+        "BMI"
+      ],
+      "standard": [
+        {
+          "key": "vitalCapacity",
+          "name": "肺活量(毫升)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 5140
+            },
+            {
+              "score": 95,
+              "edge": 5020
+            },
+            {
+              "score": 90,
+              "edge": 4900
+            },
+            {
+              "score": 85,
+              "edge": 4650
+            },
+            {
+              "score": 80,
+              "edge": 4400
+            },
+            {
+              "score": 78,
+              "edge": 4280
+            },
+            {
+              "score": 76,
+              "edge": 4160
+            },
+            {
+              "score": 74,
+              "edge": 4040
+            },
+            {
+              "score": 72,
+              "edge": 3920
+            },
+            {
+              "score": 70,
+              "edge": 3800
+            },
+            {
+              "score": 68,
+              "edge": 3680
+            },
+            {
+              "score": 66,
+              "edge": 3560
+            },
+            {
+              "score": 64,
+              "edge": 3440
+            },
+            {
+              "score": 62,
+              "edge": 3320
+            },
+            {
+              "score": 60,
+              "edge": 3200
+            },
+            {
+              "score": 50,
+              "edge": 3030
+            },
+            {
+              "score": 40,
+              "edge": 2860
+            },
+            {
+              "score": 30,
+              "edge": 2690
+            },
+            {
+              "score": 20,
+              "edge": 2520
+            },
+            {
+              "score": 10,
+              "edge": 2350
+            }
+          ]
+        },
+        {
+          "key": "jump",
+          "name": "立定跳远(厘米)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 275
+            },
+            {
+              "score": 95,
+              "edge": 270
+            },
+            {
+              "score": 90,
+              "edge": 265
+            },
+            {
+              "score": 85,
+              "edge": 258
+            },
+            {
+              "score": 80,
+              "edge": 250
+            },
+            {
+              "score": 78,
+              "edge": 246
+            },
+            {
+              "score": 76,
+              "edge": 242
+            },
+            {
+              "score": 74,
+              "edge": 238
+            },
+            {
+              "score": 72,
+              "edge": 234
+            },
+            {
+              "score": 70,
+              "edge": 230
+            },
+            {
+              "score": 68,
+              "edge": 226
+            },
+            {
+              "score": 66,
+              "edge": 222
+            },
+            {
+              "score": 64,
+              "edge": 218
+            },
+            {
+              "score": 62,
+              "edge": 214
+            },
+            {
+              "score": 60,
+              "edge": 210
+            },
+            {
+              "score": 50,
+              "edge": 205
+            },
+            {
+              "score": 40,
+              "edge": 200
+            },
+            {
+              "score": 30,
+              "edge": 195
+            },
+            {
+              "score": 20,
+              "edge": 190
+            },
+            {
+              "score": 10,
+              "edge": 185
+            }
+          ]
+        },
+        {
+          "key": "sitAndReach",
+          "name": "座位体前屈(厘米)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 25.1
+            },
+            {
+              "score": 95,
+              "edge": 23.3
+            },
+            {
+              "score": 90,
+              "edge": 21.5
+            },
+            {
+              "score": 85,
+              "edge": 19.9
+            },
+            {
+              "score": 80,
+              "edge": 18.2
+            },
+            {
+              "score": 78,
+              "edge": 16.8
+            },
+            {
+              "score": 76,
+              "edge": 15.4
+            },
+            {
+              "score": 74,
+              "edge": 14
+            },
+            {
+              "score": 72,
+              "edge": 12.6
+            },
+            {
+              "score": 70,
+              "edge": 11.2
+            },
+            {
+              "score": 68,
+              "edge": 9.8
+            },
+            {
+              "score": 66,
+              "edge": 8.4
+            },
+            {
+              "score": 64,
+              "edge": 7
+            },
+            {
+              "score": 62,
+              "edge": 5.6
+            },
+            {
+              "score": 60,
+              "edge": 4.2
+            },
+            {
+              "score": 50,
+              "edge": 3.2
+            },
+            {
+              "score": 40,
+              "edge": 2.2
+            },
+            {
+              "score": 30,
+              "edge": 1.2
+            },
+            {
+              "score": 20,
+              "edge": 0.2
+            },
+            {
+              "score": 10,
+              "edge": -0.8
+            }
+          ]
+        },
+        {
+          "key": "the50MeterRun",
+          "name": "50米跑(秒)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 6.6
+            },
+            {
+              "score": 95,
+              "edge": 6.7
+            },
+            {
+              "score": 90,
+              "edge": 6.8
+            },
+            {
+              "score": 85,
+              "edge": 6.9
+            },
+            {
+              "score": 80,
+              "edge": 7
+            },
+            {
+              "score": 78,
+              "edge": 7.2
+            },
+            {
+              "score": 76,
+              "edge": 7.4
+            },
+            {
+              "score": 74,
+              "edge": 7.6
+            },
+            {
+              "score": 72,
+              "edge": 7.8
+            },
+            {
+              "score": 70,
+              "edge": 8
+            },
+            {
+              "score": 68,
+              "edge": 8.2
+            },
+            {
+              "score": 66,
+              "edge": 8.4
+            },
+            {
+              "score": 64,
+              "edge": 8.6
+            },
+            {
+              "score": 62,
+              "edge": 8.8
+            },
+            {
+              "score": 60,
+              "edge": 9
+            },
+            {
+              "score": 50,
+              "edge": 9.2
+            },
+            {
+              "score": 40,
+              "edge": 9.4
+            },
+            {
+              "score": 30,
+              "edge": 9.6
+            },
+            {
+              "score": 20,
+              "edge": 9.8
+            },
+            {
+              "score": 10,
+              "edge": 10
+            }
+          ]
+        },
+        {
+          "key": "the1000MeterRun",
+          "name": "1000米跑(秒)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 195
+            },
+            {
+              "score": 95,
+              "edge": 200
+            },
+            {
+              "score": 90,
+              "edge": 205
+            },
+            {
+              "score": 85,
+              "edge": 212
+            },
+            {
+              "score": 80,
+              "edge": 220
+            },
+            {
+              "score": 78,
+              "edge": 225
+            },
+            {
+              "score": 76,
+              "edge": 230
+            },
+            {
+              "score": 74,
+              "edge": 235
+            },
+            {
+              "score": 72,
+              "edge": 240
+            },
+            {
+              "score": 70,
+              "edge": 245
+            },
+            {
+              "score": 68,
+              "edge": 250
+            },
+            {
+              "score": 66,
+              "edge": 255
+            },
+            {
+              "score": 64,
+              "edge": 260
+            },
+            {
+              "score": 62,
+              "edge": 265
+            },
+            {
+              "score": 60,
+              "edge": 270
+            },
+            {
+              "score": 50,
+              "edge": 290
+            },
+            {
+              "score": 40,
+              "edge": 310
+            },
+            {
+              "score": 30,
+              "edge": 330
+            },
+            {
+              "score": 20,
+              "edge": 350
+            },
+            {
+              "score": 10,
+              "edge": 370
+            }
+          ]
+        },
+        {
+          "key": "pullUp",
+          "name": "引体向上(次)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 20
+            },
+            {
+              "score": 95,
+              "edge": 19
+            },
+            {
+              "score": 90,
+              "edge": 18
+            },
+            {
+              "score": 85,
+              "edge": 17
+            },
+            {
+              "score": 80,
+              "edge": 16
+            },
+            {
+              "score": 76,
+              "edge": 15
+            },
+            {
+              "score": 72,
+              "edge": 14
+            },
+            {
+              "score": 68,
+              "edge": 13
+            },
+            {
+              "score": 64,
+              "edge": 12
+            },
+            {
+              "score": 60,
+              "edge": 11
+            },
+            {
+              "score": 50,
+              "edge": 10
+            },
+            {
+              "score": 40,
+              "edge": 9
+            },
+            {
+              "score": 30,
+              "edge": 8
+            },
+            {
+              "score": 20,
+              "edge": 7
+            },
+            {
+              "score": 10,
+              "edge": 6
+            }
+          ]
+        },
+        {
+          "key": "BMI",
+          "name": "",
+          "standardDetal": [
+            {
+              "score": 100,
+              "range": [
+                [
+                  17.9,
+                  23.9
+                ]
+              ]
+            },
+            {
+              "score": 80,
+              "range": [
+                [
+                  null,
+                  17.8
+                ],
+                [
+                  24,
+                  27.9
+                ]
+              ]
+            },
+            {
+              "score": 60,
+              "range": [
+                [
+                  28,
+                  null
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "educationaLevel": "大学",
+      "grade": ["大一","大二"],
+      "gener": "女",
+      "index": [
+        "vitalCapacity",
+        "jump",
+        "sitAndReach",
+        "the50MeterRun",
+        "the800MeterRun",
+        "sitUp",
+        "BMI"
+      ],
+      "standard": [
+        {
+          "key": "vitalCapacity",
+          "name": "肺活量(毫升)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 3400
+            },
+            {
+              "score": 95,
+              "edge": 3350
+            },
+            {
+              "score": 90,
+              "edge": 3300
+            },
+            {
+              "score": 85,
+              "edge": 3150
+            },
+            {
+              "score": 80,
+              "edge": 3000
+            },
+            {
+              "score": 78,
+              "edge": 2900
+            },
+            {
+              "score": 76,
+              "edge": 2800
+            },
+            {
+              "score": 74,
+              "edge": 2700
+            },
+            {
+              "score": 72,
+              "edge": 2600
+            },
+            {
+              "score": 70,
+              "edge": 2500
+            },
+            {
+              "score": 68,
+              "edge": 2400
+            },
+            {
+              "score": 66,
+              "edge": 2300
+            },
+            {
+              "score": 64,
+              "edge": 2200
+            },
+            {
+              "score": 62,
+              "edge": 2100
+            },
+            {
+              "score": 60,
+              "edge": 2000
+            },
+            {
+              "score": 50,
+              "edge": 1960
+            },
+            {
+              "score": 40,
+              "edge": 1920
+            },
+            {
+              "score": 30,
+              "edge": 1880
+            },
+            {
+              "score": 20,
+              "edge": 1840
+            },
+            {
+              "score": 10,
+              "edge": 1800
+            }
+          ]
+        },
+        {
+          "key": "jump",
+          "name": "立定跳远(厘米)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 207
+            },
+            {
+              "score": 95,
+              "edge": 201
+            },
+            {
+              "score": 90,
+              "edge": 195
+            },
+            {
+              "score": 85,
+              "edge": 188
+            },
+            {
+              "score": 80,
+              "edge": 181
+            },
+            {
+              "score": 78,
+              "edge": 178
+            },
+            {
+              "score": 76,
+              "edge": 175
+            },
+            {
+              "score": 74,
+              "edge": 172
+            },
+            {
+              "score": 72,
+              "edge": 169
+            },
+            {
+              "score": 70,
+              "edge": 166
+            },
+            {
+              "score": 68,
+              "edge": 163
+            },
+            {
+              "score": 66,
+              "edge": 160
+            },
+            {
+              "score": 64,
+              "edge": 157
+            },
+            {
+              "score": 62,
+              "edge": 154
+            },
+            {
+              "score": 60,
+              "edge": 151
+            },
+            {
+              "score": 50,
+              "edge": 146
+            },
+            {
+              "score": 40,
+              "edge": 141
+            },
+            {
+              "score": 30,
+              "edge": 136
+            },
+            {
+              "score": 20,
+              "edge": 131
+            },
+            {
+              "score": 10,
+              "edge": 126
+            }
+          ]
+        },
+        {
+          "key": "sitAndReach",
+          "name": "座位体前屈(厘米)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 25.8
+            },
+            {
+              "score": 95,
+              "edge": 24
+            },
+            {
+              "score": 90,
+              "edge": 22.2
+            },
+            {
+              "score": 85,
+              "edge": 20.6
+            },
+            {
+              "score": 80,
+              "edge": 19
+            },
+            {
+              "score": 78,
+              "edge": 17.7
+            },
+            {
+              "score": 76,
+              "edge": 16.4
+            },
+            {
+              "score": 74,
+              "edge": 15.1
+            },
+            {
+              "score": 72,
+              "edge": 13.8
+            },
+            {
+              "score": 70,
+              "edge": 12.5
+            },
+            {
+              "score": 68,
+              "edge": 11.2
+            },
+            {
+              "score": 66,
+              "edge": 9.9
+            },
+            {
+              "score": 64,
+              "edge": 8.6
+            },
+            {
+              "score": 62,
+              "edge": 7.3
+            },
+            {
+              "score": 60,
+              "edge": 6
+            },
+            {
+              "score": 50,
+              "edge": 5.2
+            },
+            {
+              "score": 40,
+              "edge": 4.4
+            },
+            {
+              "score": 30,
+              "edge": 3.6
+            },
+            {
+              "score": 20,
+              "edge": 2.8
+            },
+            {
+              "score": 10,
+              "edge": 2
+            }
+          ]
+        },
+        {
+          "key": "the50MeterRun",
+          "name": "50米跑(秒)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 7.5
+            },
+            {
+              "score": 95,
+              "edge": 7.6
+            },
+            {
+              "score": 90,
+              "edge": 7.7
+            },
+            {
+              "score": 85,
+              "edge": 8
+            },
+            {
+              "score": 80,
+              "edge": 8.3
+            },
+            {
+              "score": 78,
+              "edge": 8.5
+            },
+            {
+              "score": 76,
+              "edge": 8.7
+            },
+            {
+              "score": 74,
+              "edge": 8.9
+            },
+            {
+              "score": 72,
+              "edge": 9.1
+            },
+            {
+              "score": 70,
+              "edge": 9.3
+            },
+            {
+              "score": 68,
+              "edge": 9.5
+            },
+            {
+              "score": 66,
+              "edge": 9.7
+            },
+            {
+              "score": 64,
+              "edge": 9.9
+            },
+            {
+              "score": 62,
+              "edge": 10.1
+            },
+            {
+              "score": 60,
+              "edge": 10.3
+            },
+            {
+              "score": 50,
+              "edge": 10.5
+            },
+            {
+              "score": 40,
+              "edge": 10.7
+            },
+            {
+              "score": 30,
+              "edge": 10.9
+            },
+            {
+              "score": 20,
+              "edge": 11.1
+            },
+            {
+              "score": 10,
+              "edge": 11.3
+            }
+          ]
+        },
+        {
+          "key": "the8000MeterRun",
+          "name": "800米跑(秒)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 198
+            },
+            {
+              "score": 95,
+              "edge": 204
+            },
+            {
+              "score": 90,
+              "edge": 210
+            },
+            {
+              "score": 85,
+              "edge": 217
+            },
+            {
+              "score": 80,
+              "edge": 224
+            },
+            {
+              "score": 78,
+              "edge": 229
+            },
+            {
+              "score": 76,
+              "edge": 234
+            },
+            {
+              "score": 74,
+              "edge": 239
+            },
+            {
+              "score": 72,
+              "edge": 244
+            },
+            {
+              "score": 70,
+              "edge": 249
+            },
+            {
+              "score": 68,
+              "edge": 254
+            },
+            {
+              "score": 66,
+              "edge": 259
+            },
+            {
+              "score": 64,
+              "edge": 264
+            },
+            {
+              "score": 62,
+              "edge": 269
+            },
+            {
+              "score": 60,
+              "edge": 274
+            },
+            {
+              "score": 50,
+              "edge": 284
+            },
+            {
+              "score": 40,
+              "edge": 294
+            },
+            {
+              "score": 30,
+              "edge": 304
+            },
+            {
+              "score": 20,
+              "edge": 314
+            },
+            {
+              "score": 10,
+              "edge": 324
+            }
+          ]
+        },
+        {
+          "key": "sitUp",
+          "name": "仰卧起坐(次)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 56
+            },
+            {
+              "score": 95,
+              "edge": 54
+            },
+            {
+              "score": 90,
+              "edge": 52
+            },
+            {
+              "score": 85,
+              "edge": 49
+            },
+            {
+              "score": 80,
+              "edge": 46
+            },
+            {
+              "score": 78,
+              "edge": 44
+            },
+            {
+              "score": 76,
+              "edge": 42
+            },
+            {
+              "score": 74,
+              "edge": 40
+            },
+            {
+              "score": 72,
+              "edge": 38
+            },
+            {
+              "score": 70,
+              "edge": 36
+            },
+            {
+              "score": 68,
+              "edge": 34
+            },
+            {
+              "score": 66,
+              "edge": 32
+            },
+            {
+              "score": 64,
+              "edge": 30
+            },
+            {
+              "score": 62,
+              "edge": 28
+            },
+            {
+              "score": 60,
+              "edge": 26
+            },
+            {
+              "score": 50,
+              "edge": 24
+            },
+            {
+              "score": 40,
+              "edge": 22
+            },
+            {
+              "score": 30,
+              "edge": 20
+            },
+            {
+              "score": 20,
+              "edge": 18
+            },
+            {
+              "score": 10,
+              "edge": 16
+            }
+          ]
+        },
+        {
+          "key": "BMI",
+          "name": "",
+          "standardDetal": [
+            {
+              "score": 100,
+              "range": [
+                [
+                  17.2,
+                  23.9
+                ]
+              ]
+            },
+            {
+              "score": 80,
+              "range": [
+                [
+                  null,
+                  17.1
+                ],
+                [
+                  24,
+                  27.9
+                ]
+              ]
+            },
+            {
+              "score": 60,
+              "range": [
+                [
+                  28,
+                  null
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "educationaLevel": "大学",
+      "grade": ["大三","大四"],
+      "gener": "女",
+      "index": [
+        "vitalCapacity",
+        "jump",
+        "sitAndReach",
+        "the50MeterRun",
+        "the800MeterRun",
+        "sitUp",
+        "BMI"
+      ],
+      "standard": [
+        {
+          "key": "vitalCapacity",
+          "name": "肺活量(毫升)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 3450
+            },
+            {
+              "score": 95,
+              "edge": 3400
+            },
+            {
+              "score": 90,
+              "edge": 3350
+            },
+            {
+              "score": 85,
+              "edge": 3200
+            },
+            {
+              "score": 80,
+              "edge": 3050
+            },
+            {
+              "score": 78,
+              "edge": 2950
+            },
+            {
+              "score": 76,
+              "edge": 2850
+            },
+            {
+              "score": 74,
+              "edge": 2750
+            },
+            {
+              "score": 72,
+              "edge": 2650
+            },
+            {
+              "score": 70,
+              "edge": 2550
+            },
+            {
+              "score": 68,
+              "edge": 2450
+            },
+            {
+              "score": 66,
+              "edge": 2350
+            },
+            {
+              "score": 64,
+              "edge": 2250
+            },
+            {
+              "score": 62,
+              "edge": 2150
+            },
+            {
+              "score": 60,
+              "edge": 2050
+            },
+            {
+              "score": 50,
+              "edge": 2010
+            },
+            {
+              "score": 40,
+              "edge": 1970
+            },
+            {
+              "score": 30,
+              "edge": 1930
+            },
+            {
+              "score": 20,
+              "edge": 1890
+            },
+            {
+              "score": 10,
+              "edge": 1850
+            }
+          ]
+        },
+        {
+          "key": "jump",
+          "name": "立定跳远(厘米)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 208
+            },
+            {
+              "score": 95,
+              "edge": 202
+            },
+            {
+              "score": 90,
+              "edge": 196
+            },
+            {
+              "score": 85,
+              "edge": 189
+            },
+            {
+              "score": 80,
+              "edge": 182
+            },
+            {
+              "score": 78,
+              "edge": 179
+            },
+            {
+              "score": 76,
+              "edge": 176
+            },
+            {
+              "score": 74,
+              "edge": 173
+            },
+            {
+              "score": 72,
+              "edge": 160
+            },
+            {
+              "score": 70,
+              "edge": 167
+            },
+            {
+              "score": 68,
+              "edge": 164
+            },
+            {
+              "score": 66,
+              "edge": 161
+            },
+            {
+              "score": 64,
+              "edge": 158
+            },
+            {
+              "score": 62,
+              "edge": 155
+            },
+            {
+              "score": 60,
+              "edge": 152
+            },
+            {
+              "score": 50,
+              "edge": 147
+            },
+            {
+              "score": 40,
+              "edge": 142
+            },
+            {
+              "score": 30,
+              "edge": 137
+            },
+            {
+              "score": 20,
+              "edge": 132
+            },
+            {
+              "score": 10,
+              "edge": 127
+            }
+          ]
+        },
+        {
+          "key": "sitAndReach",
+          "name": "座位体前屈(厘米)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 26.3
+            },
+            {
+              "score": 95,
+              "edge": 24.4
+            },
+            {
+              "score": 90,
+              "edge": 22.4
+            },
+            {
+              "score": 85,
+              "edge": 21
+            },
+            {
+              "score": 80,
+              "edge": 19.5
+            },
+            {
+              "score": 78,
+              "edge": 18.2
+            },
+            {
+              "score": 76,
+              "edge": 16.9
+            },
+            {
+              "score": 74,
+              "edge": 15.6
+            },
+            {
+              "score": 72,
+              "edge": 14.3
+            },
+            {
+              "score": 70,
+              "edge": 13
+            },
+            {
+              "score": 68,
+              "edge": 11.7
+            },
+            {
+              "score": 66,
+              "edge": 10.4
+            },
+            {
+              "score": 64,
+              "edge": 9.1
+            },
+            {
+              "score": 62,
+              "edge": 7.8
+            },
+            {
+              "score": 60,
+              "edge": 6.5
+            },
+            {
+              "score": 50,
+              "edge": 5.7
+            },
+            {
+              "score": 40,
+              "edge": 4.9
+            },
+            {
+              "score": 30,
+              "edge": 4.1
+            },
+            {
+              "score": 20,
+              "edge": 3.3
+            },
+            {
+              "score": 10,
+              "edge": 2.5
+            }
+          ]
+        },
+        {
+          "key": "the50MeterRun",
+          "name": "50米跑(秒)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 7.4
+            },
+            {
+              "score": 95,
+              "edge": 7.5
+            },
+            {
+              "score": 90,
+              "edge": 7.6
+            },
+            {
+              "score": 85,
+              "edge": 7.9
+            },
+            {
+              "score": 80,
+              "edge": 8.2
+            },
+            {
+              "score": 78,
+              "edge": 8.4
+            },
+            {
+              "score": 76,
+              "edge": 8.6
+            },
+            {
+              "score": 74,
+              "edge": 8.8
+            },
+            {
+              "score": 72,
+              "edge": 9
+            },
+            {
+              "score": 70,
+              "edge": 9.2
+            },
+            {
+              "score": 68,
+              "edge": 9.4
+            },
+            {
+              "score": 66,
+              "edge": 9.6
+            },
+            {
+              "score": 64,
+              "edge": 9.8
+            },
+            {
+              "score": 62,
+              "edge": 10
+            },
+            {
+              "score": 60,
+              "edge": 10.2
+            },
+            {
+              "score": 50,
+              "edge": 10.4
+            },
+            {
+              "score": 40,
+              "edge": 10.6
+            },
+            {
+              "score": 30,
+              "edge": 10.8
+            },
+            {
+              "score": 20,
+              "edge": 11
+            },
+            {
+              "score": 10,
+              "edge": 11.2
+            }
+          ]
+        },
+        {
+          "key": "the8000MeterRun",
+          "name": "800米跑(秒)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 196
+            },
+            {
+              "score": 95,
+              "edge": 202
+            },
+            {
+              "score": 90,
+              "edge": 208
+            },
+            {
+              "score": 85,
+              "edge": 215
+            },
+            {
+              "score": 80,
+              "edge": 222
+            },
+            {
+              "score": 78,
+              "edge": 227
+            },
+            {
+              "score": 76,
+              "edge": 232
+            },
+            {
+              "score": 74,
+              "edge": 237
+            },
+            {
+              "score": 72,
+              "edge": 242
+            },
+            {
+              "score": 70,
+              "edge": 247
+            },
+            {
+              "score": 68,
+              "edge": 252
+            },
+            {
+              "score": 66,
+              "edge": 257
+            },
+            {
+              "score": 64,
+              "edge": 262
+            },
+            {
+              "score": 62,
+              "edge": 267
+            },
+            {
+              "score": 60,
+              "edge": 272
+            },
+            {
+              "score": 50,
+              "edge": 282
+            },
+            {
+              "score": 40,
+              "edge": 292
+            },
+            {
+              "score": 30,
+              "edge": 302
+            },
+            {
+              "score": 20,
+              "edge": 312
+            },
+            {
+              "score": 10,
+              "edge": 322
+            }
+          ]
+        },
+        {
+          "key": "sitUp",
+          "name": "仰卧起坐(次)",
+          "standardDetal": [
+            {
+              "score": 100,
+              "edge": 57
+            },
+            {
+              "score": 95,
+              "edge": 55
+            },
+            {
+              "score": 90,
+              "edge": 53
+            },
+            {
+              "score": 85,
+              "edge": 50
+            },
+            {
+              "score": 80,
+              "edge": 47
+            },
+            {
+              "score": 78,
+              "edge": 45
+            },
+            {
+              "score": 76,
+              "edge": 43
+            },
+            {
+              "score": 74,
+              "edge": 41
+            },
+            {
+              "score": 72,
+              "edge": 39
+            },
+            {
+              "score": 70,
+              "edge": 37
+            },
+            {
+              "score": 68,
+              "edge": 35
+            },
+            {
+              "score": 66,
+              "edge": 33
+            },
+            {
+              "score": 64,
+              "edge": 31
+            },
+            {
+              "score": 62,
+              "edge": 29
+            },
+            {
+              "score": 60,
+              "edge": 27
+            },
+            {
+              "score": 50,
+              "edge": 25
+            },
+            {
+              "score": 40,
+              "edge": 23
+            },
+            {
+              "score": 30,
+              "edge": 21
+            },
+            {
+              "score": 20,
+              "edge": 19
+            },
+            {
+              "score": 10,
+              "edge": 17
+            }
+          ]
+        },
+        {
+          "key": "BMI",
+          "name": "",
+          "standardDetal": [
+            {
+              "score": 100,
+              "range": [
+                [
+                  17.2,
+                  23.9
+                ]
+              ]
+            },
+            {
+              "score": 80,
+              "range": [
+                [
+                  null,
+                  17.1
                 ],
                 [
                   24,
